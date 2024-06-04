@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 
 # Check if a list of journals is provided as an argument
 if [ $# -eq 0 ]; then
@@ -10,8 +10,8 @@ fi
 listOfJournals=$1
 
 # Check if the file exists
-if [ ! -f "$listOfJournals" ]; then
-    echo "The file $listOfJournals does not exist."
+if [ ! -f "./configs/$listOfJournals" ]; then
+    echo "The file ./configs/$listOfJournals does not exist."
     exit 1
 fi
 
@@ -21,7 +21,7 @@ startTime=$(date +%s)
 # Read the file line by line and execute the command
 while IFS= read -r line || [ -n "$line" ]; do
     ./getRemoteVol.sh "$line"
-done < "$listOfJournals"
+done < "./configs/$listOfJournals"
 
 echo "=============================="
 echo "==     Process completed    =="
@@ -32,10 +32,12 @@ endTime=$(date +%s)
 
 # Calculate the execution time
 executionTime=$((endTime - startTime))
-minutes=$((executionTime / 60))
-hours=$((minutes / 60))
+hours=$((executionTime / 3600))
+minutes=$(( $((executionTime % 3600)) / 60))
+seconds=$((executionTime % 60))
 
-echo -e "\nExecution time:"
-echo    "   - Seconds: ${executionTime}"
-echo    "   - Minutes: ${minutes}"
+echo -e "\nExecution time: ${executionTime} seconds"
 echo    "   - Hours: ${hours}"
+echo    "   - Minutes: ${minutes}"
+echo    "   - Seconds: ${seconds}"
+
