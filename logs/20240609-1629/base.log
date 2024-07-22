@@ -1,0 +1,56 @@
+Gets all the volumes of the specified journal from the remote server
+Ensures the required folder structure exists
+--> Rsyncing: /srv/backup/duplicati/db-dump/*base*
+receiving incremental file list
+ojs_db_base-ojs-202406090103.sql.gz
+
+sent 46 bytes  received 111.53K bytes  74.38K bytes/sec
+total size is 222.60K  speedup is 2.00
+--> Rsyncing /srv/volumes/base/logs
+receiving incremental file list
+./
+app/
+app/access.log
+app/error.log
+db/
+
+sent 128 bytes  received 2.08K bytes  4.41K bytes/sec
+total size is 8.78M  speedup is 3,984.24
+--> Rsyncing /srv/volumes/base/public
+rsync -avzh -e "ssh -i /home/marc/.ssh/id_rsa" --rsync-path="sudo rsync" marc@adacar:/srv/volumes/base/public/ /srv/volumes/files/public/base
+receiving incremental file list
+./
+journals/
+journals/1/
+site/
+
+sent 63 bytes  received 538 bytes  1.20K bytes/sec
+total size is 201.71K  speedup is 335.62
+chmod: invalid option -- 'h'
+Try 'chmod --help' for more information.
+--> Rsyncing /srv/volumes/base/private
+receiving incremental file list
+./
+journals/
+journals/1/
+journals/1/articles/
+journals/1/issues/
+scheduledTaskLogs/
+scheduledTaskLogs/Recordatorioderevisión-6664d4627b1d4-20240609.log
+site/
+temp/
+usageStats/
+usageStats/archive/
+usageStats/processing/
+usageStats/reject/
+usageStats/stage/
+usageStats/usageEventLogs/
+
+sent 2.94K bytes  received 41.60K bytes  29.69K bytes/sec
+total size is 209.05K  speedup is 4.69
+--> Rsyncing 
+receiving incremental file list
+
+sent 44 bytes  received 1.90K bytes  776.80 bytes/sec
+total size is 65.36K  speedup is 33.65
+>>>> The transfer of the volumes of base took: 00:00:04

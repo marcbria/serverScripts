@@ -1,0 +1,56 @@
+Gets all the volumes of the specified journal from the remote server
+Ensures the required folder structure exists
+--> Rsyncing: /srv/backup/duplicati/db-dump/*arqueotext*
+receiving incremental file list
+ojs_db_arqueotext-ojs-202406070102.sql.gz
+
+sent 46 bytes  received 111.83K bytes  223.75K bytes/sec
+total size is 223.35K  speedup is 2.00
+--> Rsyncing /srv/volumes/arqueotext/logs
+receiving incremental file list
+./
+app/
+db/
+
+sent 71 bytes  received 537 bytes  405.33 bytes/sec
+total size is 7.01K  speedup is 11.52
+--> Rsyncing /srv/volumes/arqueotext/public
+rsync -avzh -e "ssh -i /home/marc/.ssh/id_rsa" --rsync-path="sudo rsync" marc@adacar:/srv/volumes/arqueotext/public/ /srv/volumes/files/public/arqueotext
+receiving incremental file list
+./
+journals/
+journals/1/
+site/
+
+sent 66 bytes  received 582 bytes  1.30K bytes/sec
+total size is 203.01K  speedup is 313.29
+chmod: invalid option -- 'h'
+Try 'chmod --help' for more information.
+--> Rsyncing /srv/volumes/arqueotext/private
+receiving incremental file list
+./
+journals/
+journals/1/
+journals/1/articles/
+journals/1/articles/28/
+journals/1/articles/29/
+journals/1/articles/30/
+journals/1/issues/
+scheduledTaskLogs/
+site/
+temp/
+usageStats/
+usageStats/archive/
+usageStats/processing/
+usageStats/reject/
+usageStats/stage/
+usageStats/usageEventLogs/
+
+sent 3.27K bytes  received 47.04K bytes  100.64K bytes/sec
+total size is 2.57M  speedup is 51.14
+--> Rsyncing 
+receiving incremental file list
+
+sent 44 bytes  received 1.90K bytes  3.88K bytes/sec
+total size is 65.33K  speedup is 33.68
+>>>> The transfer of the volumes of arqueotext took: 00:00:01

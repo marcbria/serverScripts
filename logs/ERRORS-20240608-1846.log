@@ -1,0 +1,174 @@
+Journal List File: configs/journals.lst
+
+Execution time: 21960 seconds
+   - Hours: 6
+   - Minutes: 6
+   - Seconds: 0
+./logs/20240608-1846/athenea.log:app/error.log
+./logs/20240608-1846/brumal.log:app/error.log
+./logs/20240608-1846/catJL.log:app/error.log
+./logs/20240608-1846/ciencies.log:app/error.log
+./logs/20240608-1846/clil.log:app/error.log
+./logs/20240608-1846/dag2.log:app/error.log
+./logs/20240608-1846/dag.log:app/error.log
+./logs/20240608-1846/da.log:app/error.log
+./logs/20240608-1846/dea.log:app/error.log
+./logs/20240608-1846/doblele.log:app/error.log
+./logs/20240608-1846/educar.log:app/error.log
+./logs/20240608-1846/elcvia.log:app/error.log
+./logs/20240608-1846/enrahonar.log:app/error.log
+./logs/20240608-1846/ensciencias.log:app/error.log
+./logs/20240608-1846/faventia.log:app/error.log
+./logs/20240608-1846/formaciojs.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/formaciojs.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/formaciojs.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/formaciojs.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/formaciomp.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/formaciomp.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/fraseolex.log:app/20240608-000730-error.log
+./logs/20240608-1846/fraseolex.log:app/20240608-000744-error.log
+./logs/20240608-1846/fraseolex.log:app/error.log
+./logs/20240608-1846/fraseolex.log:app/ssl_error.log
+./logs/20240608-1846/git.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/git.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/git.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/git.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/git.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/git.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/git.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/git.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/grafica2.log:app/20240608-000803-error.log
+./logs/20240608-1846/grafica2.log:app/error.log
+./logs/20240608-1846/grafica2.log:app/ssl_error.log
+./logs/20240608-1846/grafica.log:app/20240608-000751-error.log
+./logs/20240608-1846/grafica.log:app/error.log
+./logs/20240608-1846/grafica.log:app/ssl_error.log
+./logs/20240608-1846/grafowp.log:app/20240608-000821-error.log
+./logs/20240608-1846/grafowp.log:app/error.log
+./logs/20240608-1846/grafowp.log:app/ssl_error.log
+./logs/20240608-1846/indialogs.log:app/20240608-000836-error.log
+./logs/20240608-1846/indialogs.log:app/error.log
+./logs/20240608-1846/indialogs.log:app/ssl_error.log
+./logs/20240608-1846/isogloss.log:app/20240608-000858-error.log
+./logs/20240608-1846/isogloss.log:app/error.log
+./logs/20240608-1846/isogloss.log:app/ssl_error.log
+./logs/20240608-1846/jhsgl.log:app/20240608-000920-error.log
+./logs/20240608-1846/jhsgl.log:app/error.log
+./logs/20240608-1846/jhsgl.log:app/ssl_error.log
+./logs/20240608-1846/jtl3.log:app/20240608-000932-error.log
+./logs/20240608-1846/jtl3.log:app/error.log
+./logs/20240608-1846/jtl3.log:app/ssl_error.log
+./logs/20240608-1846/karanos.log:app/20240608-000950-error.log
+./logs/20240608-1846/karanos.log:app/error.log
+./logs/20240608-1846/karanos.log:app/ssl_error.log
+./logs/20240608-1846/languesparole.log:app/20240608-001006-error.log
+./logs/20240608-1846/languesparole.log:app/error.log
+./logs/20240608-1846/languesparole.log:app/ssl_error.log
+./logs/20240608-1846/locus.log:app/20240608-001017-error.log
+./logs/20240608-1846/locus.log:app/error.log
+./logs/20240608-1846/locus.log:app/ssl_error.log
+./logs/20240608-1846/manuscrits.log:app/20240608-001031-error.log
+./logs/20240608-1846/manuscrits.log:app/error.log
+./logs/20240608-1846/manuscrits.log:app/ssl_error.log
+./logs/20240608-1846/medievalia.log:app/20240608-001045-error.log
+./logs/20240608-1846/medievalia.log:app/error.log
+./logs/20240608-1846/medievalia.log:app/ssl_error.log
+./logs/20240608-1846/mitologias.log:app/20240608-001051-error.log
+./logs/20240608-1846/mitologias.log:app/error.log
+./logs/20240608-1846/mitologias.log:app/ssl_error.log
+./logs/20240608-1846/monografies.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/monografies.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/nuevasdeindias.log:app/20240608-001111-error.log
+./logs/20240608-1846/nuevasdeindias.log:app/error.log
+./logs/20240608-1846/nuevasdeindias.log:app/ssl_error.log
+./logs/20240608-1846/orsis.log:app/20240608-001118-error.log
+./logs/20240608-1846/orsis.log:app/error-ssl-apache-host.log
+./logs/20240608-1846/orsis.log:app/error.log
+./logs/20240608-1846/orsis.log:app/ssl_error.log
+./logs/20240608-1846/papers.log:app/20240608-001125-error.log
+./logs/20240608-1846/papers.log:app/error.log
+./logs/20240608-1846/papers.log:app/ssl_error.log
+./logs/20240608-1846/periferia.log:app/20240608-001141-error.log
+./logs/20240608-1846/periferia.log:app/error.log
+./logs/20240608-1846/periferia.log:app/ssl_error.log
+./logs/20240608-1846/periodicum.log:app/20240607-144701-error.log
+./logs/20240608-1846/periodicum.log:app/20240607-163636-error.log
+./logs/20240608-1846/periodicum.log:app/20240608-001200-error.log
+./logs/20240608-1846/periodicum.log:app/error.log
+./logs/20240608-1846/periodicum.log:app/ssl_error.log
+./logs/20240608-1846/qp.log:app/20240608-001214-error.log
+./logs/20240608-1846/qp.log:app/error-apache-host.log
+./logs/20240608-1846/qp.log:app/error-ssl-apache-host.log
+./logs/20240608-1846/qp.log:app/error.log
+./logs/20240608-1846/qp.log:app/ssl_error.log
+./logs/20240608-1846/quadernsiee.log:app/20240608-001239-error.log
+./logs/20240608-1846/quadernsiee.log:app/error-ssl-apache-host.log
+./logs/20240608-1846/quadernsiee.log:app/error.log
+./logs/20240608-1846/quadernsiee.log:app/ssl_error.log
+./logs/20240608-1846/quadernsitalia.log:app/20240608-001246-error.log
+./logs/20240608-1846/quadernsitalia.log:app/error.log
+./logs/20240608-1846/quadernsitalia.log:app/ssl_error.log
+./logs/20240608-1846/quaderns.log:error.log
+./logs/20240608-1846/quaderns.log:ssl_error.log
+./logs/20240608-1846/quaderns.log:app/20240608-001223-error.log
+./logs/20240608-1846/quaderns.log:app/error.log
+./logs/20240608-1846/quaderns.log:app/ssl_error.log
+./logs/20240608-1846/quadernspsicologia.log:app/20240608-001256-error.log
+./logs/20240608-1846/quadernspsicologia.log:app/error-apache-host.log
+./logs/20240608-1846/quadernspsicologia.log:app/error-ssl-apache-host.log
+./logs/20240608-1846/quadernspsicologia.log:app/error.log
+./logs/20240608-1846/quadernspsicologia.log:app/ssl_error.log
+./logs/20240608-1846/recmus.log:app/20240608-001304-error.log
+./logs/20240608-1846/recmus.log:app/error.log
+./logs/20240608-1846/recmus.log:app/ssl_error.log
+./logs/20240608-1846/redes.log:app/20240608-001313-error.log
+./logs/20240608-1846/redes.log:app/error.log
+./logs/20240608-1846/redes.log:app/ssl_error.log
+./logs/20240608-1846/regroc.log:app/20240608-001321-error.log
+./logs/20240608-1846/regroc.log:app/error.log
+./logs/20240608-1846/regroc.log:app/ssl_error.log
+./logs/20240608-1846/rubrica.log:app/20240608-001330-error.log
+./logs/20240608-1846/rubrica.log:app/error.log
+./logs/20240608-1846/rubrica.log:app/ssl_error.log
+./logs/20240608-1846/rutacom.log:app/20240608-001338-error.log
+./logs/20240608-1846/rutacom.log:app/error.log
+./logs/20240608-1846/rutacom.log:app/ssl_error.log
+./logs/20240608-1846/scriptum.log:app/20240608-001353-error.log
+./logs/20240608-1846/scriptum.log:app/error.log
+./logs/20240608-1846/scriptum.log:app/ssl_error.log
+./logs/20240608-1846/studiaaurea.log:app/20240608-001400-error.log
+./logs/20240608-1846/studiaaurea.log:app/error.log
+./logs/20240608-1846/studiaaurea.log:app/ssl_error.log
+./logs/20240608-1846/tdevorado.log:app/20240608-001410-error.log
+./logs/20240608-1846/tdevorado.log:app/20240608-001424-error.log
+./logs/20240608-1846/tdevorado.log:app/error.log
+./logs/20240608-1846/tdevorado.log:app/ssl_error.log
+./logs/20240608-1846/test05-ojs.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/test05-ojs.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/tradumatica.log:app/20240608-001430-error.log
+./logs/20240608-1846/tradumatica.log:app/20240608-001444-error.log
+./logs/20240608-1846/tradumatica.log:app/error.log
+./logs/20240608-1846/tradumatica.log:app/ssl_error.log
+./logs/20240608-1846/traefik.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/traefik.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/traefik.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/traefik.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/traefik.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/traefik.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/traefik.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/traefik.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/treballsarqueologia.log:app/20240608-001451-error.log
+./logs/20240608-1846/treballsarqueologia.log:app/error.log
+./logs/20240608-1846/treballsarqueologia.log:app/ssl_error.log
+./logs/20240608-1846/web-publicacions.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/web-publicacions.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/web-publicacions.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/web-publicacions.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/web-publicacions.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/web-publicacions.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/web-test.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/web-test.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/web-test.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/web-test.log:rsync: [Receiver] write error: Broken pipe (32)
+./logs/20240608-1846/web-test.log:rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+./logs/20240608-1846/web-test.log:rsync: [Receiver] write error: Broken pipe (32)

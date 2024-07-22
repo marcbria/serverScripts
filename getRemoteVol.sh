@@ -32,7 +32,7 @@ remoteUsr=marc
 privateKeyPath=/home/${remoteUsr}/.ssh/id_rsa
 
 # Setting remote folders (source)
-srcDbDumps=/srv/backup/duplicati/db-dump/*${journal}*
+srcDbDumps=/srv/backup/duplicati/db-dump/*${journal}-*
 srcAll=/srv/volumes/${journal}
 srcDb=/srv/volumes/${journal}/db
 srcLogs=/srv/volumes/${journal}/logs
@@ -79,16 +79,20 @@ mkdir -p ${destFilesConfigs}   > /dev/null 2>&1
 # Commons folder: Run once
 # rsync -avzh -e "ssh -i /home/marc/.ssh/id_rsa" --rsync-path="sudo rsync" marc@adacar:/home/dojo/sites/common/ /home/docker/sites/common -a
 
-
+echo "Go in..."
 # Pulls DB Dumps
 if [ -n "$destDbDumps" ]; then
+	echo "Running..."
 	echo "--> Rsyncing: ${srcDbDumps}"
 	rsync -avzh -e "ssh -i ${privateKeyPath}" --rsync-path="sudo rsync" ${remoteUsr}@adacar:${srcDbDumps} ${destDbDumps}
-	unlink ${destAll}/migration
+	rm -Rf ${destAll}/migration
 	ln -s ${destDbDumps} ${destAll}/migration
-	# Removes al files except the newer one:
+	# Removes al dump files except the newer one:
     cd ${destDbDumps}
-    ls -t | head -n 2 | tail -n 1 | xargs rm -f
+    latestDump=$(ls -1t | head -n 1)
+    ls -1 | grep -v "$latestDump" | xargs rm -f 
+    # Add general fixes:
+    cp /home/marc/serverMigration/dbFix/* . -a
     # Sets permissions for mysql:mysql user and group
     chown 999:999 ${destDbDumps}/ -Rh
     find ${destDbDumps} -type d -exec chmod 0755 {} \;

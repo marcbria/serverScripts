@@ -1,0 +1,275 @@
+Gets all the volumes of the specified journal from the remote server
+Ensures the required folder structure exists
+Go in...
+Running...
+--> Rsyncing: /srv/backup/duplicati/db-dump/*arqueotext-*
+receiving incremental file list
+ojs_db_arqueotext-ojs-202406300103.sql.gz
+ojs_db_arqueotext-ojs-202407010101.sql.gz
+
+sent 62 bytes  received 160.84K bytes  107.27K bytes/sec
+total size is 224.52K  speedup is 1.40
+--> Rsyncing /srv/volumes/arqueotext/logs
+receiving incremental file list
+./
+app/
+app/access.log
+app/error.log
+app/ssl_error.log
+db/
+
+sent 393 bytes  received 5.37K bytes  11.52K bytes/sec
+total size is 78.16K  speedup is 13.57
+--> Rsyncing /srv/volumes/arqueotext/public
+rsync -avzh -e "ssh -i /home/marc/.ssh/id_rsa" --rsync-path="sudo rsync" marc@adacar:/srv/volumes/arqueotext/public/ /srv/volumes/files/public/arqueotext
+receiving incremental file list
+./
+journals/
+journals/1/
+site/
+
+sent 66 bytes  received 582 bytes  432.00 bytes/sec
+total size is 203.01K  speedup is 313.29
+chmod: invalid option -- 'h'
+Try 'chmod --help' for more information.
+--> Rsyncing /srv/volumes/arqueotext/private
+receiving incremental file list
+./
+journals/
+journals/1/
+journals/1/articles/
+journals/1/articles/28/
+journals/1/articles/29/
+journals/1/articles/30/
+journals/1/issues/
+scheduledTaskLogs/
+scheduledTaskLogs/##admin.scheduledTask.statisticsReport##-6681d561d6686-20240701.log
+scheduledTaskLogs/Recordatoriodecaducidaddelasuscripción-6681d5726da41-20240701.log
+scheduledTaskLogs/Recordatorioderevisión-66774962a5895-20240623.log
+scheduledTaskLogs/Recordatorioderevisión-66789ae2e90a4-20240624.log
+scheduledTaskLogs/Recordatorioderevisión-6679ec61ad741-20240625.log
+scheduledTaskLogs/Recordatorioderevisión-667b3de2439e2-20240626.log
+scheduledTaskLogs/Recordatorioderevisión-667c8f61718cc-20240627.log
+scheduledTaskLogs/Recordatorioderevisión-667de0e12c7d7-20240628.log
+scheduledTaskLogs/Recordatorioderevisión-667f32632191d-20240629.log
+scheduledTaskLogs/Recordatorioderevisión-668083e28eaca-20240630.log
+scheduledTaskLogs/Recordatorioderevisión-6681d561c3170-20240701.log
+site/
+temp/
+usageStats/
+usageStats/archive/
+usageStats/processing/
+usageStats/reject/
+usageStats/stage/
+usageStats/usageEventLogs/
+usageStats/usageEventLogs/usage_events_20220420.log
+usageStats/usageEventLogs/usage_events_20220421.log
+usageStats/usageEventLogs/usage_events_20220422.log
+usageStats/usageEventLogs/usage_events_20220425.log
+usageStats/usageEventLogs/usage_events_20220427.log
+usageStats/usageEventLogs/usage_events_20220503.log
+usageStats/usageEventLogs/usage_events_20220504.log
+usageStats/usageEventLogs/usage_events_20220505.log
+usageStats/usageEventLogs/usage_events_20220506.log
+usageStats/usageEventLogs/usage_events_20220507.log
+usageStats/usageEventLogs/usage_events_20220508.log
+usageStats/usageEventLogs/usage_events_20220509.log
+usageStats/usageEventLogs/usage_events_20220511.log
+usageStats/usageEventLogs/usage_events_20220512.log
+usageStats/usageEventLogs/usage_events_20220513.log
+usageStats/usageEventLogs/usage_events_20220514.log
+usageStats/usageEventLogs/usage_events_20220515.log
+usageStats/usageEventLogs/usage_events_20220516.log
+usageStats/usageEventLogs/usage_events_20220517.log
+usageStats/usageEventLogs/usage_events_20220518.log
+usageStats/usageEventLogs/usage_events_20220519.log
+usageStats/usageEventLogs/usage_events_20220521.log
+usageStats/usageEventLogs/usage_events_20220523.log
+usageStats/usageEventLogs/usage_events_20220524.log
+usageStats/usageEventLogs/usage_events_20220525.log
+usageStats/usageEventLogs/usage_events_20220527.log
+usageStats/usageEventLogs/usage_events_20220529.log
+usageStats/usageEventLogs/usage_events_20220530.log
+usageStats/usageEventLogs/usage_events_20220531.log
+usageStats/usageEventLogs/usage_events_20220601.log
+usageStats/usageEventLogs/usage_events_20220602.log
+usageStats/usageEventLogs/usage_events_20220603.log
+usageStats/usageEventLogs/usage_events_20220604.log
+usageStats/usageEventLogs/usage_events_20220605.log
+usageStats/usageEventLogs/usage_events_20220606.log
+usageStats/usageEventLogs/usage_events_20220608.log
+usageStats/usageEventLogs/usage_events_20220609.log
+usageStats/usageEventLogs/usage_events_20220610.log
+usageStats/usageEventLogs/usage_events_20220611.log
+usageStats/usageEventLogs/usage_events_20220612.log
+usageStats/usageEventLogs/usage_events_20220613.log
+usageStats/usageEventLogs/usage_events_20220616.log
+usageStats/usageEventLogs/usage_events_20220617.log
+usageStats/usageEventLogs/usage_events_20220618.log
+usageStats/usageEventLogs/usage_events_20220620.log
+usageStats/usageEventLogs/usage_events_20220622.log
+usageStats/usageEventLogs/usage_events_20220623.log
+usageStats/usageEventLogs/usage_events_20220624.log
+usageStats/usageEventLogs/usage_events_20220625.log
+usageStats/usageEventLogs/usage_events_20220627.log
+usageStats/usageEventLogs/usage_events_20220628.log
+usageStats/usageEventLogs/usage_events_20220629.log
+usageStats/usageEventLogs/usage_events_20220630.log
+usageStats/usageEventLogs/usage_events_20220701.log
+usageStats/usageEventLogs/usage_events_20220702.log
+usageStats/usageEventLogs/usage_events_20220703.log
+usageStats/usageEventLogs/usage_events_20220704.log
+usageStats/usageEventLogs/usage_events_20220705.log
+usageStats/usageEventLogs/usage_events_20220707.log
+usageStats/usageEventLogs/usage_events_20220711.log
+usageStats/usageEventLogs/usage_events_20220714.log
+usageStats/usageEventLogs/usage_events_20220715.log
+usageStats/usageEventLogs/usage_events_20220716.log
+usageStats/usageEventLogs/usage_events_20220717.log
+usageStats/usageEventLogs/usage_events_20220719.log
+usageStats/usageEventLogs/usage_events_20220720.log
+usageStats/usageEventLogs/usage_events_20220721.log
+usageStats/usageEventLogs/usage_events_20220724.log
+usageStats/usageEventLogs/usage_events_20220726.log
+usageStats/usageEventLogs/usage_events_20220727.log
+usageStats/usageEventLogs/usage_events_20220728.log
+usageStats/usageEventLogs/usage_events_20220729.log
+usageStats/usageEventLogs/usage_events_20220730.log
+usageStats/usageEventLogs/usage_events_20220731.log
+usageStats/usageEventLogs/usage_events_20220801.log
+usageStats/usageEventLogs/usage_events_20220802.log
+usageStats/usageEventLogs/usage_events_20220804.log
+usageStats/usageEventLogs/usage_events_20220805.log
+usageStats/usageEventLogs/usage_events_20220806.log
+usageStats/usageEventLogs/usage_events_20220807.log
+usageStats/usageEventLogs/usage_events_20220808.log
+usageStats/usageEventLogs/usage_events_20220809.log
+usageStats/usageEventLogs/usage_events_20220811.log
+usageStats/usageEventLogs/usage_events_20220812.log
+usageStats/usageEventLogs/usage_events_20220813.log
+usageStats/usageEventLogs/usage_events_20220814.log
+usageStats/usageEventLogs/usage_events_20220815.log
+usageStats/usageEventLogs/usage_events_20220816.log
+usageStats/usageEventLogs/usage_events_20220817.log
+usageStats/usageEventLogs/usage_events_20220818.log
+usageStats/usageEventLogs/usage_events_20220819.log
+usageStats/usageEventLogs/usage_events_20220820.log
+usageStats/usageEventLogs/usage_events_20220821.log
+usageStats/usageEventLogs/usage_events_20220822.log
+usageStats/usageEventLogs/usage_events_20220823.log
+usageStats/usageEventLogs/usage_events_20220824.log
+usageStats/usageEventLogs/usage_events_20220825.log
+usageStats/usageEventLogs/usage_events_20220826.log
+usageStats/usageEventLogs/usage_events_20220827.log
+usageStats/usageEventLogs/usage_events_20220828.log
+usageStats/usageEventLogs/usage_events_20220829.log
+usageStats/usageEventLogs/usage_events_20220831.log
+usageStats/usageEventLogs/usage_events_20220902.log
+usageStats/usageEventLogs/usage_events_20220904.log
+usageStats/usageEventLogs/usage_events_20220905.log
+usageStats/usageEventLogs/usage_events_20220906.log
+usageStats/usageEventLogs/usage_events_20220907.log
+usageStats/usageEventLogs/usage_events_20220908.log
+usageStats/usageEventLogs/usage_events_20220912.log
+usageStats/usageEventLogs/usage_events_20220914.log
+usageStats/usageEventLogs/usage_events_20220917.log
+usageStats/usageEventLogs/usage_events_20220918.log
+usageStats/usageEventLogs/usage_events_20220920.log
+usageStats/usageEventLogs/usage_events_20220921.log
+usageStats/usageEventLogs/usage_events_20220925.log
+usageStats/usageEventLogs/usage_events_20220927.log
+usageStats/usageEventLogs/usage_events_20220929.log
+usageStats/usageEventLogs/usage_events_20220930.log
+usageStats/usageEventLogs/usage_events_20221002.log
+usageStats/usageEventLogs/usage_events_20221003.log
+usageStats/usageEventLogs/usage_events_20221004.log
+usageStats/usageEventLogs/usage_events_20221005.log
+usageStats/usageEventLogs/usage_events_20221007.log
+usageStats/usageEventLogs/usage_events_20221009.log
+usageStats/usageEventLogs/usage_events_20221020.log
+usageStats/usageEventLogs/usage_events_20221031.log
+usageStats/usageEventLogs/usage_events_20221104.log
+usageStats/usageEventLogs/usage_events_20221114.log
+usageStats/usageEventLogs/usage_events_20221123.log
+usageStats/usageEventLogs/usage_events_20221125.log
+usageStats/usageEventLogs/usage_events_20221129.log
+usageStats/usageEventLogs/usage_events_20221216.log
+usageStats/usageEventLogs/usage_events_20221220.log
+usageStats/usageEventLogs/usage_events_20221221.log
+usageStats/usageEventLogs/usage_events_20221222.log
+usageStats/usageEventLogs/usage_events_20230110.log
+usageStats/usageEventLogs/usage_events_20230111.log
+usageStats/usageEventLogs/usage_events_20230118.log
+usageStats/usageEventLogs/usage_events_20230119.log
+usageStats/usageEventLogs/usage_events_20230120.log
+usageStats/usageEventLogs/usage_events_20230125.log
+usageStats/usageEventLogs/usage_events_20230130.log
+usageStats/usageEventLogs/usage_events_20230131.log
+usageStats/usageEventLogs/usage_events_20230201.log
+usageStats/usageEventLogs/usage_events_20230207.log
+usageStats/usageEventLogs/usage_events_20230210.log
+usageStats/usageEventLogs/usage_events_20230222.log
+usageStats/usageEventLogs/usage_events_20230227.log
+usageStats/usageEventLogs/usage_events_20230303.log
+usageStats/usageEventLogs/usage_events_20230308.log
+usageStats/usageEventLogs/usage_events_20230313.log
+usageStats/usageEventLogs/usage_events_20230314.log
+usageStats/usageEventLogs/usage_events_20230329.log
+usageStats/usageEventLogs/usage_events_20230330.log
+usageStats/usageEventLogs/usage_events_20230331.log
+usageStats/usageEventLogs/usage_events_20230403.log
+usageStats/usageEventLogs/usage_events_20230405.log
+usageStats/usageEventLogs/usage_events_20230409.log
+usageStats/usageEventLogs/usage_events_20230412.log
+usageStats/usageEventLogs/usage_events_20230417.log
+usageStats/usageEventLogs/usage_events_20230426.log
+usageStats/usageEventLogs/usage_events_20230503.log
+usageStats/usageEventLogs/usage_events_20230508.log
+usageStats/usageEventLogs/usage_events_20230530.log
+usageStats/usageEventLogs/usage_events_20230603.log
+usageStats/usageEventLogs/usage_events_20230606.log
+usageStats/usageEventLogs/usage_events_20230615.log
+usageStats/usageEventLogs/usage_events_20230620.log
+usageStats/usageEventLogs/usage_events_20230623.log
+usageStats/usageEventLogs/usage_events_20230629.log
+usageStats/usageEventLogs/usage_events_20230710.log
+usageStats/usageEventLogs/usage_events_20230720.log
+usageStats/usageEventLogs/usage_events_20230723.log
+usageStats/usageEventLogs/usage_events_20230724.log
+usageStats/usageEventLogs/usage_events_20230725.log
+usageStats/usageEventLogs/usage_events_20230727.log
+usageStats/usageEventLogs/usage_events_20230906.log
+usageStats/usageEventLogs/usage_events_20230912.log
+usageStats/usageEventLogs/usage_events_20230928.log
+usageStats/usageEventLogs/usage_events_20231014.log
+usageStats/usageEventLogs/usage_events_20231016.log
+usageStats/usageEventLogs/usage_events_20231103.log
+usageStats/usageEventLogs/usage_events_20231127.log
+usageStats/usageEventLogs/usage_events_20231130.log
+usageStats/usageEventLogs/usage_events_20231213.log
+usageStats/usageEventLogs/usage_events_20231215.log
+usageStats/usageEventLogs/usage_events_20240113.log
+usageStats/usageEventLogs/usage_events_20240118.log
+usageStats/usageEventLogs/usage_events_20240122.log
+usageStats/usageEventLogs/usage_events_20240126.log
+usageStats/usageEventLogs/usage_events_20240205.log
+usageStats/usageEventLogs/usage_events_20240307.log
+usageStats/usageEventLogs/usage_events_20240402.log
+usageStats/usageEventLogs/usage_events_20240504.log
+usageStats/usageEventLogs/usage_events_20240514.log
+usageStats/usageEventLogs/usage_events_20240606.log
+usageStats/usageEventLogs/usage_events_20240607.log
+usageStats/usageEventLogs/usage_events_20240618.log
+usageStats/usageEventLogs/usage_events_20240620.log
+usageStats/usageEventLogs/usage_events_20240622.log
+usageStats/usageEventLogs/usage_events_20240627.log
+usageStats/usageEventLogs/usage_events_20240701.log
+
+sent 6.78K bytes  received 68.24K bytes  30.01K bytes/sec
+total size is 2.58M  speedup is 34.39
+--> Rsyncing 
+receiving incremental file list
+
+sent 44 bytes  received 1.90K bytes  3.88K bytes/sec
+total size is 65.33K  speedup is 33.68
+>>>> The transfer of the volumes of arqueotext took: 00:00:04

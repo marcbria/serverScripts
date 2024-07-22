@@ -1,0 +1,161 @@
+Gets all the volumes of the specified journal from the remote server
+Ensures the required folder structure exists
+--> Rsyncing: /srv/backup/duplicati/db-dump/*formaciojs*
+receiving incremental file list
+rsync: [sender] link_stat "/srv/backup/duplicati/db-dump/*formaciojs*" failed: No such file or directory (2)
+
+sent 8 bytes  received 8 bytes  32.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+rsync: [Receiver] write error: Broken pipe (32)
+--> Rsyncing /srv/volumes/formaciojs/logs
+receiving incremental file list
+rsync: [sender] change_dir "/srv/volumes/formaciojs/logs" failed: No such file or directory (2)
+
+sent 8 bytes  received 8 bytes  10.67 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+rsync: [Receiver] write error: Broken pipe (32)
+--> Rsyncing /srv/volumes/formaciojs/public
+rsync -avzh -e "ssh -i /home/marc/.ssh/id_rsa" --rsync-path="sudo rsync" marc@adacar:/srv/volumes/formaciojs/public/ /srv/volumes/files/public/formaciojs
+receiving incremental file list
+./
+journals/
+journals/1/
+journals/10/
+journals/11/
+journals/12/
+journals/13/
+journals/14/
+journals/15/
+journals/16/
+journals/17/
+journals/18/
+journals/19/
+journals/2/
+journals/4/
+journals/6/
+journals/7/
+journals/8/
+journals/9/
+site/
+
+sent 121 bytes  received 867 bytes  1.98K bytes/sec
+total size is 385.64K  speedup is 390.32
+chmod: invalid option -- 'h'
+Try 'chmod --help' for more information.
+--> Rsyncing /srv/volumes/formaciojs/private
+receiving incremental file list
+./
+journals/
+journals/1/
+journals/1/articles/
+journals/1/articles/1/
+journals/1/articles/10/
+journals/1/articles/2/
+journals/1/articles/3/
+journals/1/articles/7/
+journals/1/articles/9/
+journals/1/customLocale/
+journals/1/customLocale/es_ES/
+journals/1/customLocale/es_ES/lib/
+journals/1/customLocale/es_ES/lib/pkp/
+journals/1/customLocale/es_ES/lib/pkp/locale/
+journals/1/customLocale/es_ES/lib/pkp/locale/es_ES/
+journals/1/issues/
+journals/10/
+journals/10/articles/
+journals/10/articles/27/
+journals/10/articles/36/
+journals/10/issues/
+journals/11/
+journals/11/articles/
+journals/11/articles/29/
+journals/11/issues/
+journals/12/
+journals/12/articles/
+journals/12/articles/20/
+journals/12/articles/31/
+journals/12/articles/32/
+journals/12/issues/
+journals/12/issues/7/
+journals/12/issues/7/public/
+journals/13/
+journals/13/articles/
+journals/13/articles/23/
+journals/13/issues/
+journals/14/
+journals/14/articles/
+journals/14/articles/21/
+journals/14/articles/33/
+journals/14/issues/
+journals/15/
+journals/15/articles/
+journals/15/articles/24/
+journals/15/articles/37/
+journals/15/articles/39/
+journals/15/issues/
+journals/16/
+journals/16/articles/
+journals/16/articles/30/
+journals/16/issues/
+journals/17/
+journals/17/articles/
+journals/17/issues/
+journals/18/
+journals/18/articles/
+journals/18/issues/
+journals/19/
+journals/19/articles/
+journals/19/issues/
+journals/2/
+journals/2/articles/
+journals/2/articles/11/
+journals/2/articles/12/
+journals/2/articles/13/
+journals/2/articles/14/
+journals/2/articles/15/
+journals/2/articles/16/
+journals/2/issues/
+journals/4/
+journals/4/articles/
+journals/4/articles/17/
+journals/4/articles/18/
+journals/4/articles/19/
+journals/4/issues/
+journals/6/
+journals/6/articles/
+journals/6/articles/26/
+journals/6/issues/
+journals/7/
+journals/7/articles/
+journals/7/articles/25/
+journals/7/articles/38/
+journals/7/issues/
+journals/8/
+journals/8/articles/
+journals/8/articles/28/
+journals/8/issues/
+journals/9/
+journals/9/articles/
+journals/9/articles/22/
+journals/9/articles/34/
+journals/9/issues/
+scheduledTaskLogs/
+site/
+temp/
+usageStats/
+usageStats/archive/
+usageStats/processing/
+usageStats/reject/
+usageStats/stage/
+usageStats/usageEventLogs/
+
+sent 5.18K bytes  received 96.94K bytes  204.24K bytes/sec
+total size is 20.40M  speedup is 199.74
+--> Rsyncing 
+receiving incremental file list
+
+sent 20 bytes  received 191 bytes  140.67 bytes/sec
+total size is 18.23K  speedup is 86.41
+>>>> The transfer of the volumes of formaciojs took: 00:00:02

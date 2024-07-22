@@ -1,0 +1,32 @@
+Gets all the volumes of the specified journal from the remote server
+Ensures the required folder structure exists
+--> Rsyncing: /srv/backup/duplicati/db-dump/*fraseolex*
+receiving incremental file list
+ojs_db_fraseolex-ojs-202406080113.sql.gz
+
+sent 46 bytes  received 407.58K bytes  815.26K bytes/sec
+total size is 847.71K  speedup is 2.08
+--> Rsyncing /srv/volumes/fraseolex/logs
+kex_exchange_identification: read: Connection reset by peer
+Connection reset by 84.88.95.17 port 22
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+--> Rsyncing /srv/volumes/fraseolex/public
+rsync -avzh -e "ssh -i /home/marc/.ssh/id_rsa" --rsync-path="sudo rsync" marc@adacar:/srv/volumes/fraseolex/public/ /srv/volumes/files/public/fraseolex
+kex_exchange_identification: read: Connection reset by peer
+Connection reset by 84.88.95.17 port 22
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+chmod: invalid option -- 'h'
+Try 'chmod --help' for more information.
+--> Rsyncing /srv/volumes/fraseolex/private
+kex_exchange_identification: read: Connection reset by peer
+Connection reset by 84.88.95.17 port 22
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+--> Rsyncing 
+kex_exchange_identification: read: Connection reset by peer
+Connection reset by 84.88.95.17 port 22
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+>>>> The transfer of the volumes of fraseolex took: 00:00:00

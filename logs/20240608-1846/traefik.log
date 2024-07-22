@@ -1,0 +1,44 @@
+Gets all the volumes of the specified journal from the remote server
+Ensures the required folder structure exists
+--> Rsyncing: /srv/backup/duplicati/db-dump/*traefik*
+receiving incremental file list
+rsync: [sender] link_stat "/srv/backup/duplicati/db-dump/*traefik*" failed: No such file or directory (2)
+
+sent 8 bytes  received 8 bytes  10.67 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+rsync: [Receiver] write error: Broken pipe (32)
+--> Rsyncing /srv/volumes/traefik/logs
+receiving incremental file list
+./
+
+sent 30 bytes  received 103 bytes  266.00 bytes/sec
+total size is 0  speedup is 0.00
+--> Rsyncing /srv/volumes/traefik/public
+rsync -avzh -e "ssh -i /home/marc/.ssh/id_rsa" --rsync-path="sudo rsync" marc@adacar:/srv/volumes/traefik/public/ /srv/volumes/files/public/traefik
+receiving incremental file list
+rsync: [sender] change_dir "/srv/volumes/traefik/public" failed: No such file or directory (2)
+
+sent 8 bytes  received 8 bytes  32.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+rsync: [Receiver] write error: Broken pipe (32)
+chmod: invalid option -- 'h'
+Try 'chmod --help' for more information.
+--> Rsyncing /srv/volumes/traefik/private
+receiving incremental file list
+rsync: [sender] change_dir "/srv/volumes/traefik/private" failed: No such file or directory (2)
+
+sent 8 bytes  received 8 bytes  32.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+rsync: [Receiver] write error: Broken pipe (32)
+--> Rsyncing 
+receiving incremental file list
+rsync: [sender] change_dir "/srv/volumes/traefik/config" failed: No such file or directory (2)
+
+sent 8 bytes  received 8 bytes  32.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+rsync: [Receiver] write error: Broken pipe (32)
+>>>> The transfer of the volumes of traefik took: 00:00:02

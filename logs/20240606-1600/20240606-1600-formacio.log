@@ -1,0 +1,78 @@
+Gets all the volumes of the specified journal from the remote server
+Ensures the required folder structure exists
+--> Rsyncing: /srv/backup/duplicati/db-dump/*formacio*
+receiving incremental file list
+pkp_db_formaciomp-omp-202302130204.sql.gz
+
+sent 55 bytes  received 206.12K bytes  412.35K bytes/sec
+total size is 618.05K  speedup is 3.00
+--> Rsyncing /srv/volumes/formacio/logs
+receiving incremental file list
+./
+app/
+db/
+
+sent 56 bytes  received 339 bytes  790.00 bytes/sec
+total size is 328.98K  speedup is 832.86
+--> Rsyncing /srv/volumes/formacio/public
+rsync -avzh -e "ssh -i /home/marc/.ssh/id_rsa" --rsync-path="sudo rsync" marc@adacar:/srv/volumes/formacio/public/ /srv/volumes/files/public/formacio
+receiving incremental file list
+./
+journals/
+journals/1/
+site/
+
+sent 63 bytes  received 538 bytes  1.20K bytes/sec
+total size is 201.71K  speedup is 335.62
+chmod: invalid option -- 'h'
+Try 'chmod --help' for more information.
+--> Rsyncing /srv/volumes/formacio/private
+receiving incremental file list
+./
+journals/
+journals/1/
+journals/1/articles/
+journals/1/issues/
+scheduledTaskLogs/
+site/
+temp/
+usageStats/
+usageStats/archive/
+usageStats/processing/
+usageStats/reject/
+usageStats/stage/
+usageStats/usageEventLogs/
+
+sent 1.14K bytes  received 16.83K bytes  11.98K bytes/sec
+total size is 78.71K  speedup is 4.38
+--> Rsyncing 
+receiving incremental file list
+./
+.git/
+.git/branches/
+.git/hooks/
+.git/info/
+.git/logs/
+.git/logs/refs/
+.git/logs/refs/heads/
+.git/objects/
+.git/objects/37/
+.git/objects/45/
+.git/objects/64/
+.git/objects/79/
+.git/objects/7c/
+.git/objects/95/
+.git/objects/9c/
+.git/objects/a9/
+.git/objects/aa/
+.git/objects/dd/
+.git/objects/f7/
+.git/objects/info/
+.git/objects/pack/
+.git/refs/
+.git/refs/heads/
+.git/refs/tags/
+
+sent 231 bytes  received 2.08K bytes  4.63K bytes/sec
+total size is 63.12K  speedup is 27.27
+>>>> The transfer of the volumes of formacio took: 00:00:01

@@ -1,0 +1,82 @@
+Gets all the volumes of the specified journal from the remote server
+Ensures the required folder structure exists
+--> Rsyncing: /srv/backup/duplicati/db-dump/*demo*
+receiving incremental file list
+ojs_db_demo-ojs-202406050109.sql.gz
+ojs_db_demo-ojs-202406060115.sql.gz
+
+sent 62 bytes  received 147.45K bytes  295.03K bytes/sec
+total size is 213.57K  speedup is 1.45
+--> Rsyncing /srv/volumes/demo/logs
+receiving incremental file list
+./
+app/
+db/
+demoLock/
+
+sent 63 bytes  received 409 bytes  944.00 bytes/sec
+total size is 799.70K  speedup is 1,694.28
+--> Rsyncing /srv/volumes/demo/public
+rsync -avzh -e "ssh -i /home/marc/.ssh/id_rsa" --rsync-path="sudo rsync" marc@adacar:/srv/volumes/demo/public/ /srv/volumes/files/public/demo
+receiving incremental file list
+./
+journals/
+journals/1/
+site/
+
+sent 63 bytes  received 538 bytes  400.67 bytes/sec
+total size is 201.71K  speedup is 335.62
+chmod: invalid option -- 'h'
+Try 'chmod --help' for more information.
+--> Rsyncing /srv/volumes/demo/private
+receiving incremental file list
+./
+journals/
+journals/1/
+journals/1/articles/
+journals/1/issues/
+scheduledTaskLogs/
+scheduledTaskLogs/Recordatorioderevisión-665f8e639a762-20240605.log
+scheduledTaskLogs/Recordatorioderevisión-6660dfe13203a-20240606.log
+site/
+temp/
+usageStats/
+usageStats/archive/
+usageStats/processing/
+usageStats/reject/
+usageStats/stage/
+usageStats/usageEventLogs/
+
+sent 2.79K bytes  received 42.48K bytes  90.54K bytes/sec
+total size is 177.39K  speedup is 3.92
+--> Rsyncing 
+receiving incremental file list
+./
+.git/
+.git/branches/
+.git/hooks/
+.git/info/
+.git/logs/
+.git/logs/refs/
+.git/logs/refs/heads/
+.git/objects/
+.git/objects/37/
+.git/objects/45/
+.git/objects/64/
+.git/objects/79/
+.git/objects/7c/
+.git/objects/95/
+.git/objects/9c/
+.git/objects/a9/
+.git/objects/aa/
+.git/objects/dd/
+.git/objects/f7/
+.git/objects/info/
+.git/objects/pack/
+.git/refs/
+.git/refs/heads/
+.git/refs/tags/
+
+sent 231 bytes  received 2.08K bytes  4.63K bytes/sec
+total size is 65.29K  speedup is 28.20
+>>>> The transfer of the volumes of demo took: 00:00:02

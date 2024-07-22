@@ -4,7 +4,7 @@
 if [ $# -eq 0 ]; then
     echo "REMOVES all data for the specified journal"
     echo "ERROR: Missing argument with journal's name."
-    echo "Usage: $0 <journal>"
+    echo "Usage: $0 <journalName> [nobackup]"
     exit 1
 fi
 
@@ -12,7 +12,7 @@ journal=${1}
 
 # Verify if is running with sudo
 if [ "$EUID" -ne 0 ]; then
-    echo "This script needs sudo privileges. Run as follows 'sudo ./deleteJournal.sh'"
+    echo "This script needs sudo privileges. Run as follows 'sudo ./deleteJournal.sh journalName [nobackup]'"
     exit 1
 fi
 
@@ -50,14 +50,18 @@ mkdir "${bckDestination}/${journal}" -p
 chmod 666 ${bckDestination} -R
 backupFile="${bckDestination}/${journal}/${timestamp}-${journal}.tgz"
 
-tar -czf $backupFile $journalSite $journalDbDumps $journalAll $journalDb $journalLogs $journalFilesPublic $journalFilesPrivate $journalFilesConfigs
+if [ "$2" == "nobackup" ]; then
+	echo "NO BACKUP MODE FORCED!: Data will be removed WITHOUT making a BACKUP first."
+else
+	tar -czf $backupFile $journalSite $journalDbDumps $journalAll $journalDb $journalLogs $journalFilesPublic $journalFilesPrivate $journalFilesConfigs
 
-if [ $? -ne 0 ]; then
-    echo "ERROR: Backup creation failed!"
-    exit 1
+	if [ $? -ne 0 ]; then
+    	echo "ERROR: Backup creation failed!"
+    	exit 1
+	fi
+
+	echo "Backup created at $backupFile"
 fi
-
-echo "Backup created at $backupFile"
 
 # Warning message
 read -p "This will REMOVE all data for $journal. Are you sure you want to continue? [y/N] " confirm

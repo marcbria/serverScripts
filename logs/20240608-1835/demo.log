@@ -1,0 +1,31 @@
+Gets all the volumes of the specified journal from the remote server
+Ensures the required folder structure exists
+--> Rsyncing: /srv/backup/duplicati/db-dump/*demo*
+kex_exchange_identification: read: Connection reset by peer
+Connection reset by 84.88.95.17 port 22
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+--> Rsyncing /srv/volumes/demo/logs
+kex_exchange_identification: read: Connection reset by peer
+Connection reset by 84.88.95.17 port 22
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+--> Rsyncing /srv/volumes/demo/public
+rsync -avzh -e "ssh -i /home/marc/.ssh/id_rsa" --rsync-path="sudo rsync" marc@adacar:/srv/volumes/demo/public/ /srv/volumes/files/public/demo
+kex_exchange_identification: read: Connection reset by peer
+Connection reset by 84.88.95.17 port 22
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+chmod: invalid option -- 'h'
+Try 'chmod --help' for more information.
+--> Rsyncing /srv/volumes/demo/private
+kex_exchange_identification: read: Connection reset by peer
+Connection reset by 84.88.95.17 port 22
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+--> Rsyncing 
+kex_exchange_identification: read: Connection reset by peer
+Connection reset by 84.88.95.17 port 22
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+>>>> The transfer of the volumes of demo took: 00:00:00

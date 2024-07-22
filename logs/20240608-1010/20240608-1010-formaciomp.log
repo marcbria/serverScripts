@@ -1,0 +1,121 @@
+Gets all the volumes of the specified journal from the remote server
+Ensures the required folder structure exists
+--> Rsyncing: /srv/backup/duplicati/db-dump/*formaciomp*
+receiving incremental file list
+pkp_db_formaciomp-omp-202302120205.sql.gz
+
+sent 46 bytes  received 205.88K bytes  411.85K bytes/sec
+total size is 411.44K  speedup is 2.00
+--> Rsyncing /srv/volumes/formaciomp/logs
+receiving incremental file list
+rsync: [sender] change_dir "/srv/volumes/formaciomp/logs" failed: No such file or directory (2)
+
+sent 8 bytes  received 8 bytes  10.67 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
+rsync: [Receiver] write error: Broken pipe (32)
+--> Rsyncing /srv/volumes/formaciomp/public
+rsync -avzh -e "ssh -i /home/marc/.ssh/id_rsa" --rsync-path="sudo rsync" marc@adacar:/srv/volumes/formaciomp/public/ /srv/volumes/files/public/formaciomp
+receiving incremental file list
+./
+presses/
+presses/1/
+presses/10/
+presses/11/
+presses/12/
+presses/13/
+presses/14/
+presses/15/
+presses/2/
+presses/3/
+presses/4/
+presses/5/
+presses/6/
+presses/7/
+presses/8/
+presses/9/
+site/
+site/images/
+site/images/ceditorial09/
+
+sent 223 bytes  received 2.19K bytes  4.82K bytes/sec
+total size is 1.42M  speedup is 589.05
+chmod: invalid option -- 'h'
+Try 'chmod --help' for more information.
+--> Rsyncing /srv/volumes/formaciomp/private
+receiving incremental file list
+./
+presses/
+presses/1/
+presses/1/categories/
+presses/1/monographs/
+presses/1/monographs/1/
+presses/1/monographs/2/
+presses/1/monographs/3/
+presses/1/monographs/4/
+presses/1/monographs/5/
+presses/1/monographs/6/
+presses/1/monographs/9/
+presses/1/series/
+presses/10/
+presses/10/monographs/
+presses/10/monographs/13/
+presses/11/
+presses/11/monographs/
+presses/11/monographs/14/
+presses/11/monographs/21/
+presses/11/monographs/23/
+presses/11/series/
+presses/12/
+presses/12/categories/
+presses/12/monographs/
+presses/12/monographs/10/
+presses/13/
+presses/13/monographs/
+presses/13/monographs/18/
+presses/14/
+presses/14/monographs/
+presses/14/monographs/17/
+presses/15/
+presses/15/monographs/
+presses/15/monographs/11/
+presses/2/
+presses/2/monographs/
+presses/2/monographs/15/
+presses/3/
+presses/3/monographs/
+presses/4/
+presses/4/monographs/
+presses/5/
+presses/5/monographs/
+presses/5/monographs/20/
+presses/6/
+presses/6/monographs/
+presses/6/monographs/16/
+presses/7/
+presses/7/monographs/
+presses/7/monographs/19/
+presses/8/
+presses/8/monographs/
+presses/8/monographs/12/
+presses/9/
+presses/9/monographs/
+scheduledTaskLogs/
+site/
+temp/
+usageStats/
+usageStats/archive/
+usageStats/processing/
+usageStats/reject/
+usageStats/stage/
+usageStats/usageEventLogs/
+
+sent 2.69K bytes  received 45.30K bytes  95.99K bytes/sec
+total size is 46.76M  speedup is 974.35
+--> Rsyncing 
+receiving incremental file list
+./
+
+sent 39 bytes  received 210 bytes  166.00 bytes/sec
+total size is 18.15K  speedup is 72.88
+>>>> The transfer of the volumes of formaciomp took: 00:00:02
