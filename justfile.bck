@@ -1,0 +1,18 @@
+# Justfile
+
+# Default target to show available targets
+default:
+    @echo "Available targets:"
+    @just -l
+
+# Calculates and display the space occupied for each journal
+spaceUsage journalList:
+    sudo ./mSpaceUsage.sh {{journalList}}
+
+# CAR-Migration: Gets all the journals listed in the fileParam from the remote server
+getAllVols journalList:
+    sudo ./getAllVols.sh {{journalList}}
+
+# CAR-Migration: Gets the volumes of the specified journal from the remote server
+getRemoteVols journal:
+    sudo ./getRemoteVol.sh {{journal}}

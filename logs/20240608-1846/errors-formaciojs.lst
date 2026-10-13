@@ -1,4 +1,0 @@
-rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
-rsync: [Receiver] write error: Broken pipe (32)
-rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1865) [Receiver=3.2.7]
-rsync: [Receiver] write error: Broken pipe (32)
