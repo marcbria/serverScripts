@@ -1,12 +1,8 @@
----
-title: serverScripts
-description: Bash toolkit to pull OJS data from remote servers via rsync into a dojo-compliant local layout.
-license: GPL-3.0
----
-
 # serverScripts
 
-Bash toolkit to pull OJS (Open Journal Systems) data from remote servers via `rsync` and store it in the correct local folders following a "dojo compliant" layout. Targets OJS instances running under Docker, with optional ZFS snapshot support.
+Bash toolkit for common tasks that are not yet relevant enough to move into the "dojo" project.
+Tasks include rsync OJS between local and remote servers, DB dumps (now moved to dojo), data removal, zfs management, and running same actions across all instances.
+Targets OJS instances need to be running under Docker, with optional ZFS snapshot support.
 
 ## What it does
 
